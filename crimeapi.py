@@ -41,7 +41,6 @@ def main():
 
         except:
             print("Something went wrong!")
-            exit()
 
 win = Tk()
 win.geometry('500x500')
