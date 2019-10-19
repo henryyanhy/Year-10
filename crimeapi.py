@@ -17,7 +17,7 @@ from tkinter import *
 
 def writeHTML(data):
         myfile = open("myapi.html","w")
-        myfile.write("<h1>JSON file returned by API call</h1>")
+        myfile.write("<h1>" + e1.get() + " count in " + e2.get() + "</h1>")
         myfile.write("<p>Copy and paste to <a href='https://jsoneditoronline.org/'>JSON editor</a> for a prettier format.</p>")
         myfile.write(data)
         myfile.close()
@@ -36,11 +36,11 @@ def main():
                         datajson = response.json()
 
                 else:
-                    data = "Error has occured"
+                    data = "An error has occured."
                     writeHTML(data)
 
         except:
-            print("Something went wrong!")
+            print("An error has occured.")
 
 win = Tk()
 win.geometry('500x500')
