@@ -18,7 +18,7 @@ from tkinter import *
 def writeHTML(data):
         myfile = open("myapi.html","w")
         myfile.write("<h1>" + e1.get() + " count in " + e2.get() + "</h1>")
-        myfile.write("<p>Copy and paste to <a href='https://jsoneditoronline.org/'>JSON editor</a> for a prettier format.</p>")
+        myfile.write("<p>Copy and paste to <a href='https://jsoneditoronline.org/'>JSON editor</a> for an organized format.</p>")
         myfile.write(data)
         myfile.close()
 
