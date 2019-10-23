@@ -36,11 +36,11 @@ def main():
                         datajson = response.json()
 
                 else:
-                    data = "An error has occured."
+                    data = "An error has occurred."
                     writeHTML(data)
 
         except:
-            print("An error has occured.")
+            print("An error has occurred.")
 
 win = Tk()
 win.geometry('500x500')
